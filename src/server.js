@@ -1,8 +1,9 @@
 import dotenv from 'dotenv';
-import app from './app.js';
 
-// Load environment variables
+// Load environment variables FIRST
 dotenv.config();
+
+import app from './app.js';
 
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || 'localhost';
